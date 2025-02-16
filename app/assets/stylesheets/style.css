@@ -52,7 +52,8 @@ section {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+  text-align: justify
 }
 
 h2 {
@@ -75,14 +76,79 @@ footer {
   bottom: 0;
 }
 
-.image {
+.avatar {
   width: 140px;
   height: auto;
   border-radius: 50%;
+}
+
+.avatar:hover {
+  transform: scale(1.35);
+  transition: all 0.3s ease-in-out;
+}
+
+.image {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .flag {
   width: 50px;
   height: auto;
   border-radius: 3px;
+  margin: 0 0.5em;
+}
+
+.flag:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-content {
+  margin-left: 16em;
+  max-width: 800px;
+  padding-left: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.email-link:hover {
+  color: #e71ba0;
+  transform: scale(1.35);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: inline;
+  align-items: flex-start;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+.icon-container {
+  margin-right: 10px;
+}
+
+.logo {
+  width: 33px;
+  height: auto;
+  margin-left: 12px;
+}
+
+.logo:hover {
+  transform: scale(1.35);
+  transition: all 0.3s ease-in-out;
 }

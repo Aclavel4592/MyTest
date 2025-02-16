@@ -5,52 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antoine CLAVEL</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
     <div class="header-content">
       <div class="header-left">
+        <a href="https://www.linkedin.com/in/antoine-clavel-6ba1445a/"><%= image_tag "antoine-cv-2.png", class:"avatar" %></a>
         <h1>Antoine CLAVEL</h1>
-        <%= image_tag "antoine-cv-2.png", class:"image" %>
-        <p>Chef de projet / produit senior ETL | Paris, France</p>
+        <p>CHEF DE PROJET / PRODUIT SENIOR ETL | Paris, France</p>
       </div>
       <div class="header-right">
         <%= link_to home_english_path do %>
           <%= image_tag "england.png", class:"flag" %>
         <% end %>
+           <%= link_to home_spanish_path do %>
+          <%= image_tag "spain.png", class:"flag" %>
+        <% end %>
       </div>
     </div>
   </header>
   <section id="about">
-      <h2>À propos</h2>
+      <h2>En quelques mots</h2>
       <p>Autodidacte et issue d'un parcours bicéphale entre la technique et le commerce je mets à contribution aujourd’hui mon expérience au profit des sociétés afin de développer des synergies business scalables et technologiquement pérennes. Justifiant de plus de 9 ans d'expérience dans l’accomplissement de programmes transverses à fort enjeux stratégiques, j'ai à coeur cette volonté de relever de nouveaux challenges.</p>
   </section>
   <section id="experience">
       <h2>Principales Expériences</h2>
       <div class="job">
-          <h3>MARKETPAY</h3>
-          <p>Solution Owner - 3 ans</p>
+          <h3>DOGOURS<%= image_tag "logo.png", class:"image" %></h3>
+          <p>Co-founder - 7 mois | 2024 - actuel</p>
+          <ul>
+              <li>Création & conception d'une PWA Ruby On Rails avec notifications push, dashboard, messagerie instantanée, etc.</li>
+              <li>Création d’un Business Plan / figma / vidéo de démo pour incubateur (104 factory, Station F, etc.)</li>
+              <li>Définition d’une stratégie Marketing et commerciale & accord de principe fonds BPI</li>
+          </ul>
+          <h3>MARKETPAY<%= image_tag "marketpay.png", class:"image" %></h3>
+          <p>Solution Owner - 3 ans | 2021 - 2023</p>
           <ul>
               <li>Supervision des flux de paiement, techniques et hybrides pour Carrefour</li>
-              <li>Gestion complète interface Mulesoft / Run - Build /  équipe 5 développeurs / 1.5M€</li>
+              <li>Gestion complète interface Mulesoft / Run - Build / équipe 5 développeurs / 1.5M€</li>
+              <li>Gestion de 35 APIs sur 2 loadBalancers maintenues par 45 vCores Prod / environnement tests</li>
+              <li>Reconstruction d’une CI / CD - (JDK - Maven - Github)</li>
+              <li>Mise en place d'une API gateway - Outil type ELK</li>
+              <li>Gestion des Secrets MarketPay (certificats SSL, MTLS, etc.)</li>
           </ul>
-          <h3>PMU</h3>
-          <p>RA Sport/Poker // Manager - 2 ans</p>
+          <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
+          <p>RA Sport/Poker // Manager - 2 ans | 2019 - 2020</p>
           <ul>
-              <li>Gestion activités sport et poker PMU</li>
-              <li>Management équipe Build / Run / Qualité – Suivi opérationnel et technique de l’activité applicative / 2.5M€</li>
+              <li>Gestion activités sport et poker Build & Run</li>
+              <li>Management d'équipes – Suivi opérationnel et technique de l’activité applicative</li>
+              <li>Dialogue avec partenaires internationaux & Suivi des Roadmap clients / Budget annuel (2.5M€)</li>
+              <li>Suivi migration AWS full scope - PMU général</li>
+              <li>Conception de document technique (Elasticsearch, gestion de flux, mise en place d'API, appel AJAX, etc.)</li>
           </ul>
-          <h3>Disney</h3>
-          <p>Coach Agile - 8 mois</p>
+          <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
+          <p>Coach Agile - 8 mois | 2018</p>
           <ul>
               <li>Migration Site institutionnel (D4TH)</li>
-              <li>Conduite de projet, animation des équipes, Pilotage MOE onshore / offshore, Gestion JIRA, Documentation, Organisation des plannings.</li>
+              <li>Conduite de projet, animation des équipes, pilotage onshore / offshore, organisation des plannings</li>
+              <li>Conception de document technique (Elasticsearch, gestion de flux, mise en place d'API, appel AJAX, etc.)</li>
+              <li>Supervision des End To End test / tests de charges / tests de sécurité</li>
+              <li>Mise en prod du site en big-bang sur 5 continents (27 pays)</li>
           </ul>
-          <h3>Solocal</h3>
-          <p>Chef de projet technique (MOE) – 2 ans</p>
+          <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
+          <p>Chef de projet technique (MOE) – 2 ans | 2016 - 2018</p>
           <ul>
-              <li>Gestion de projets techniques</li>
+              <li>Mise en place d’une nouvelle solution de prise de RDV / Store-locator pour le N°2 France du changement de Pare-Brise</li>
               <li>Conduite multi-projets, Gestion des ressources transverses, Garant technique de solution Web, Refonte API REST, BDD MySQL</li>
+              <li>Gestion et validation des demandes clients/Business en fonction de la faisabilité technique</li>
+              <li>Management de ressources techniques (3 développeurs)</li>
+              <li>Mise en place d’une API Gateway</li>
           </ul>
       </div>
   </section>
@@ -68,12 +92,27 @@
       <h2>Compétences</h2>
       <p></p>
       <ul>
-          <li> Outils : Mulesoft - Anypoint Studio - Méthodologie SCRUM / Agile SAFE Ruby On Rails, Github, Confluence, Jira, SQL server, PostGreSql, API REST, Postman, HTML/CSS, Git Kraken, Visual Studio</li>
-          <li>Technologies : - DataWeave / JS</li>
+          <li>Génrérales : Méthodologie SCRUM - Agile SAFE - Kanban </li>
+          <li>Outils : Mulesoft (Anypoint Platform & Studio) - Salesforce - Github - Confluence - Jira - Postman - Git Kraken - Visual Studio</li>
+          <li>Technologies : DataWeave - JavaScript - Ruby On Rails - SQL server - PostGreSql - API REST - HTML/CSS</li>
       </ul>
   </section>
   <footer>
-      <p>Contact: <a href="mailto:clavel.antoine@gmail.com">clavel.antoine@gmail.com</a> | Téléphone: 06.16.22.01.30</p>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><a href="mailto:clavel.antoine@gmail.com"><i class="fa-solid fa-2x fa-envelope email-link"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/antoine-clavel-6ba1445a/"><i class="fa-brands fa-2x fa-linkedin email-link"></i></a></p>
+        <p><a href="https://github.com/Aclavel4592"><i class="fa-brands fa-2x fa-github email-link"></i></a></p>
+        <p><a href="https://dogours.me"><%= image_tag "logo.png", class:"logo"%></a></p>
+      </div>
+     <div class="footer-right">
+        <div class="icon-container">
+          <p><i class="fa-solid fa-2x fa-square-phone-flip"></i></p>
+        </div>
+        <div>
+          <p>: 06 16 22 01 30</p>
+        </div>
+    </div>
   </footer>
 </body>
 </html>

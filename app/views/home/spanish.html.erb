@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoine CLAVEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <a href="https://www.linkedin.com/in/antoine-clavel-6ba1445a/"><%= image_tag "antoine-cv-2.png", class:"avatar" %></a>
+        <h1>Antoine CLAVEL</h1>
+        <p>GERENTE DE PROYECTO / PRODUCTO SENIOR ETL | París, Francia</p>
+      </div>
+      <div class="header-right">
+        <%= link_to root_path do %>
+          <%= image_tag "france.png", class:"flag" %>
+        <% end %>
+           <%= link_to home_english_path do %>
+          <%= image_tag "england.png", class:"flag" %>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+      <h2>En Pocas Palabras</h2>
+      <p>Autodidacta y proveniente de un recorrido bicéfalo entre la técnica y el comercio, hoy pongo mi experiencia al servicio de las empresas para desarrollar sinergias de negocio escalables y tecnológicamente sostenibles. Con más de 9 años de experiencia en la ejecución de programas transversales de alto impacto estratégico, tengo el deseo de enfrentar nuevos desafíos.</p>
+  </section>
+  <section id="experience">
+      <h2>Experiencias Principales</h2>
+      <div class="job">
+          <h3>DOGOURS<%= image_tag "logo.png", class:"image" %></h3>
+          <p>Co-fundador - 7 meses | 2024 - actual</p>
+          <ul>
+              <li>Creación y diseño de una PWA Ruby On Rails con notificaciones push, tablero, mensajería instantánea, etc.</li>
+              <li>Creación de un Plan de Negocio / Figma / video de demostración para incubadoras (104 factory, Station F, etc.)</li>
+              <li>Definición de una estrategia de Marketing y comercial & acuerdo de principio con fondos BPI</li>
+          </ul>
+          <h3>MARKETPAY<%= image_tag "marketpay.png", class:"image" %></h3>
+          <p>Propietario de la Solución - 3 años | 2021 - 2023</p>
+          <ul>
+              <li>Supervisión de flujos de pago, técnicos e híbridos para Carrefour</li>
+              <li>Gestión completa de la interfaz Mulesoft / Ejecución - Construcción / equipo de 5 desarrolladores / 1,5M€</li>
+              <li>Gestión de 35 APIs en 2 balanceadores de carga mantenidos por 45 vCores Prod / entorno de pruebas</li>
+              <li>Reconstrucción de una CI / CD - (JDK - Maven - Github)</li>
+              <li>Implementación de una puerta de enlace API - Herramienta tipo ELK</li>
+              <li>Gestión de los Secretos de MarketPay (certificados SSL, MTLS, etc.)</li>
+          </ul>
+          <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
+          <p>RA Deportes/Póker // Gerente - 2 años | 2019 - 2020</p>
+          <ul>
+              <li>Gestión de actividades de deportes y póker Build & Run</li>
+              <li>Gestión de equipos – Seguimiento operativo y técnico de la actividad aplicativa</li>
+              <li>Diálogo con socios internacionales & Seguimiento de los roadmaps de clientes / Presupuesto anual (2,5M€)</li>
+              <li>Seguimiento de la migración completa a AWS - PMU general</li>
+              <li>Diseño de documentos técnicos (Elasticsearch, gestión de flujos, implementación de API, llamadas AJAX, etc.)</li>
+          </ul>
+          <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
+          <p>Coach Ágil - 8 meses | 2018</p>
+          <ul>
+              <li>Migración del sitio institucional (D4TH)</li>
+              <li>Gestión de proyectos, facilitación de equipos, gestión onshore / offshore, organización de horarios</li>
+              <li>Diseño de documentos técnicos (Elasticsearch, gestión de flujos, implementación de API, llamadas AJAX, etc.)</li>
+              <li>Supervisión de pruebas End To End / pruebas de carga / pruebas de seguridad</li>
+              <li>Lanzamiento a producción del sitio en big-bang en 5 continentes (27 países)</li>
+          </ul>
+          <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
+          <p>Gerente de Proyecto Técnico (MOE) – 2 años | 2016 - 2018</p>
+          <ul>
+              <li>Implementación de una nueva solución de programación de citas / localizador de tiendas para el N°2 de Francia en cambio de parabrisas</li>
+              <li>Gestión de múltiples proyectos, Gestión de recursos transversales, Garantía técnica de la solución Web, Refactorización de API REST, BDD MySQL</li>
+              <li>Gestión y validación de solicitudes de clientes/negocios según la viabilidad técnica</li>
+              <li>Gestión de recursos técnicos (3 desarrolladores)</li>
+              <li>Implementación de una API Gateway</li>
+          </ul>
+      </div>
+  </section>
+  <section id="education">
+      <h2>Educación</h2>
+      <div class="degree">
+          <h3>Diploma</h3>
+          <p>Le Wagon - Certificación de Desarrollador Web | 2024</p>
+          <p>Burgundy School of Business - Máster en Marketing Internacional, especialidad emprendimiento | 2012</p>
+          <p>IAE Orléans – Maestría en Economía y Ciencias Sociales, especialidad Econometría | 2011</p>
+          <p>IAE Orleans - Licenciatura en Economía y Ciencias Sociales, especialidad Econometría | 2010</p>
+      </div>
+  </section>
+  <section id="skills">
+      <h2>Competencias</h2>
+      <p></p>
+      <ul>
+          <li>Generales: Metodología SCRUM - Agile SAFE - Kanban</li>
+          <li>Herramientas: Mulesoft (Anypoint Platform & Studio) - Salesforce - Github - Confluence - Jira - Postman - Git Kraken - Visual Studio</li>
+          <li>Tecnologías: DataWeave - JavaScript - Ruby On Rails - SQL Server - PostGreSql - API REST - HTML/CSS</li>
+      </ul>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><a href="mailto:clavel.antoine@gmail.com"><i class="fa-solid fa-2x fa-envelope email-link"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/antoine-clavel-6ba1445a/"><i class="fa-brands fa-2x fa-linkedin email-link"></i></a></p>
+        <p><a href="https://github.com/Aclavel4592"><i class="fa-brands fa-2x fa-github email-link"></i></a></p>
+        <p><a href="https://dogours.me"><%= image_tag "logo.png", class:"logo"%></a></p>
+      </div>
+     <div class="footer-right">
+        <div class="icon-container">
+          <p><i class="fa-solid fa-2x fa-square-phone-flip"></i></p>
+        </div>
+        <div>
+          <p>: 06 16 22 01 30</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
