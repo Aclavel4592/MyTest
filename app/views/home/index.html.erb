@@ -3,47 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV en ligne</title>
+    <title>Antoine CLAVEL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Votre Nom</h1>
-        <p>Développeur Web | Votre Ville, Votre Pays</p>
-    </header>
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Une brève introduction sur vous-même.</p>
-    </section>
-    <section id="experience">
-        <h2>Expérience</h2>
-        <div class="job">
-            <h3>Titre du poste</h3>
-            <p>Nom de l'entreprise | Date de début - Date de fin</p>
-            <ul>
-                <li>Responsabilité 1</li>
-                <li>Responsabilité 2</li>
-            </ul>
-        </div>
-        <!-- Ajoutez d'autres expériences ici -->
-    </section>
-    <section id="education">
-        <h2>Éducation</h2>
-        <div class="degree">
-            <h3>Diplôme</h3>
-            <p>Nom de l'institution | Année d'obtention</p>
-        </div>
-        <!-- Ajoutez d'autres diplômes ici -->
-    </section>
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li>Compétence 1</li>
-            <li>Compétence 2</li>
-        </ul>
-    </section>
-    <footer>
-        <p>Contact : email@example.com | Téléphone : 01 23 45 67 92</p>
-    </footer>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1>Antoine CLAVEL</h1>
+        <%= image_tag "antoine-cv-2.png", class:"image" %>
+        <p>Chef de projet / produit senior ETL | Paris, France</p>
+      </div>
+      <div class="header-right">
+        <%= link_to home_english_path do %>
+          <%= image_tag "england.png", class:"flag" %>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+      <h2>À propos</h2>
+      <p>Autodidacte et issue d'un parcours bicéphale entre la technique et le commerce je mets à contribution aujourd’hui mon expérience au profit des sociétés afin de développer des synergies business scalables et technologiquement pérennes. Justifiant de plus de 9 ans d'expérience dans l’accomplissement de programmes transverses à fort enjeux stratégiques, j'ai à coeur cette volonté de relever de nouveaux challenges.</p>
+  </section>
+  <section id="experience">
+      <h2>Principales Expériences</h2>
+      <div class="job">
+          <h3>MARKETPAY</h3>
+          <p>Solution Owner - 3 ans</p>
+          <ul>
+              <li>Supervision des flux de paiement, techniques et hybrides pour Carrefour</li>
+              <li>Gestion complète interface Mulesoft / Run - Build /  équipe 5 développeurs / 1.5M€</li>
+          </ul>
+          <h3>PMU</h3>
+          <p>RA Sport/Poker // Manager - 2 ans</p>
+          <ul>
+              <li>Gestion activités sport et poker PMU</li>
+              <li>Management équipe Build / Run / Qualité – Suivi opérationnel et technique de l’activité applicative / 2.5M€</li>
+          </ul>
+          <h3>Disney</h3>
+          <p>Coach Agile - 8 mois</p>
+          <ul>
+              <li>Migration Site institutionnel (D4TH)</li>
+              <li>Conduite de projet, animation des équipes, Pilotage MOE onshore / offshore, Gestion JIRA, Documentation, Organisation des plannings.</li>
+          </ul>
+          <h3>Solocal</h3>
+          <p>Chef de projet technique (MOE) – 2 ans</p>
+          <ul>
+              <li>Gestion de projets techniques</li>
+              <li>Conduite multi-projets, Gestion des ressources transverses, Garant technique de solution Web, Refonte API REST, BDD MySQL</li>
+          </ul>
+      </div>
+  </section>
+  <section id="education">
+      <h2>Éducation</h2>
+      <div class="degree">
+          <h3>Diplôme</h3>
+          <p>Le Wagon - Certification Web developpeur | 2024</p>
+          <p>Burgundy School of Business - Master Marketing International, spécialité entrepreneuriat | 2012</p>
+          <p>IAE Orléans – Maîtrise économique et sociale, spécialité économétrie | 2011</p>
+          <p>IAE Orleans - Licence économique et sociale, spécialité économétrie | 2010</p>
+      </div>
+  </section>
+  <section id="skills">
+      <h2>Compétences</h2>
+      <p></p>
+      <ul>
+          <li> Outils : Mulesoft - Anypoint Studio - Méthodologie SCRUM / Agile SAFE Ruby On Rails, Github, Confluence, Jira, SQL server, PostGreSql, API REST, Postman, HTML/CSS, Git Kraken, Visual Studio</li>
+          <li>Technologies : - DataWeave / JS</li>
+      </ul>
+  </section>
+  <footer>
+      <p>Contact: <a href="mailto:clavel.antoine@gmail.com">clavel.antoine@gmail.com</a> | Téléphone: 06.16.22.01.30</p>
+  </footer>
 </body>
 </html>

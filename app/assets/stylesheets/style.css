@@ -9,8 +9,40 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  margin: 2rem auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+
+.header-left p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.header-right .flag {
+  margin-top: 1em;
+  width: 50px;
+  height: auto;
 }
 
 section {
@@ -20,6 +52,7 @@ section {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 3rem;
 }
 
 h2 {
@@ -40,4 +73,16 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.image {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+  border-radius: 3px;
 }
