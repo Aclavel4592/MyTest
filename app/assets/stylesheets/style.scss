@@ -3,57 +3,132 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #FBF6EE;
 }
 
 .header-content {
-  margin: 2rem auto;
-  max-width: 800px;
-  display: flex;
+  background: #344D67;
+  padding: 1em 1em 2em 1em;
+  display:flex;
   justify-content: space-between;
-  align-items: top;
-  width: 100%;
+  align-items: center;
+  color: white;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.home-hover:hover {
+  color: #e71ba0;
+  transform: scale(1.35);
+  transition: all 0.3s ease-in-out;
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+  border-radius: 3px;
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+
+.flag:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-left {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.header-left h1 {
-  margin: 0;
+.purple-badge {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #e71ba0;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-.header-left p {
-  margin: 0.5rem 0 0;
-  font-size: 1rem;
-}
-
-.header-right .flag {
-  margin-top: 1em;
-  width: 50px;
-  height: auto;
-}
-
-section {
-  margin: 2rem auto;
-  max-width: 800px;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+.personal-information {
+  margin: 1em auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding-bottom: 4rem;
-  text-align: justify
+  text-align: justify;
+  padding: 3em 2em 5em 2em;
+  background: #FFFBE9;
+  border-radius: 8px;
+}
+
+.personal-information-left {
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.badge-curriculum, .badge-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: black;
+  text-decoration: none;
+  border: none;
+  opacity: 0.8;;
+}
+
+.badge-curriculum {
+  background-color: #FAAB78;
+}
+
+.badge-curriculum:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.badge-project {
+  background-color: #B4E4FF;
+}
+
+.badge-project:hover {
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 240px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 h2 {
@@ -62,29 +137,64 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.job, .degree {
-  margin-bottom: 2rem;
+.experience {
+  margin-bottom: 2em;
+  margin: 1em auto;
+  max-width: 800px;
+  display: flex;
+  align-items: top;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 3em 2em 5em 2em;
+  background: #FFFBE9;
+  border-radius: 8px;
 }
+
+.skills {
+  margin: 1em auto;
+  max-width: 800px;
+  display: flex;
+  align-items: top;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 3em 2em 4em 2em;
+  margin-bottom: 9em;
+  background: #FFFBE9;
+  border-radius: 8px;
+}
+
+.picture-set {
+  margin: 1em auto;
+  max-width: 1030px;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: top;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 3em 1em 4em 1em;
+  margin-bottom: 9em;
+  background: #FFFBE9;
+  border-radius: 8px;
+}
+
+.picture-definition {
+  width: 200px;
+  height: auto;
+  margin: 1em 1em 2em 1em;
+}
+
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #333;
+  background: #344D67;
   color: #fff;
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-
-.avatar {
-  width: 140px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.avatar:hover {
-  transform: scale(1.35);
-  transition: all 0.3s ease-in-out;
 }
 
 .image {
@@ -95,22 +205,8 @@ footer {
   margin-left: 10px;
 }
 
-.flag {
-  width: 50px;
-  height: auto;
-  border-radius: 3px;
-  margin: 0 0.5em;
-}
-
-.flag:hover {
-  transform: scale(1.15);
-  transition: all 0.3s ease-in-out;
-}
-
 .footer-content {
-  margin-left: 16em;
-  max-width: 800px;
-  padding-left: 2em;
+  padding: 1em 2em 2em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;

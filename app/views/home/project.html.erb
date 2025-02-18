@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1></h1>
+        <p><span class="purple-badge"></span> <strong> Antoine CLAVEL </strong><i>| Paris, France</i></p>
+      </div>
+      <div class="header-right">
+        <%= link_to root_path do %>
+          <i class="fa-solid fa-2x fa-igloo home-hover"></i>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <section class="personal-information">
+    <div class="personal-information-left ">
+      <a href="https://dogours.me/users"><%= image_tag "logo.png", class:"avatar" %></a>
+    </div>
+    <div class="personal-information-right">
+      <h1>DOGOURS</h1>
+      <p>DOGOURS est la solution de balades cannines conviviales pour toutes celles et ceux qui souhaitent changer leur quotidien.</p>
+      <h2>En quelques mots</h2>
+      <p>DOGOURS est une application web ayant pour but de faciliter l'entraide entre propriétaires de chiens dans les grands centres urbains.
+      Elle permet la mise en relation de propriétaires à travers une intreface web, dédiée à la création et au partage de balades géolocalisées.
+      Grace à cette application chaque propriétaire peut créer ou rejoindre une balade de son choix selon un ensemble de critères personnalisables.
+      Un Dashboard ainsi qu'une messagerie instantanée sont disponibles afin de faciliter les échanges et la gestion de ces balades.</p>
+    </div>
+  </section>
+  <section class="picture-set">
+    <div>
+      <p>En plus de ce service, DOGOURS permet à tous ses utilisateurs de profiter de vidéos intéractives et éducatives. Ces contenus sont réalisés par
+      des professionnels du monde canin et ont pour vocation de permettre aux propritaires de mieux comprendre les attentes de leur animal de compagnie
+      mais aussi de les aider dans leur quotidien sur des thématiques diverses, tout au long du cycle de vie de leur chien, de la phase d'adoption jusqu'à
+      la fin de vie de leurs petits protégés.</p>
+      <p>En plus de ces services, DOGOURS répond à une mission d'intérêt public. C’est à dire qu’elle répond à un besoin essentiel de la société, ici ce
+      service correspond au bien-être de l'animal de compagnie. Chacun peut déclarer la perte de son chien directement en activant le bouton “Déclarer la perte”
+      et renseigner les informations relatives au lieu, à l’heure et au jour de sa disparition directement sur son profil.
+      Une fois les informations complétées, le chien apparaîtra alors sur la liste critique des chiens perdus et une notification est envoyée à l’ensemble des
+      utilisateurs de la plateforme leur signalant alors la perte du chien.</p>
+      <p>Pour plus de contexte ci-dessous des screenshots de la solution qui est également disponible ici :
+      <a href="https://dogours.me"><%= image_tag "logo.png", class:"image" %> </p>
+      <%= image_tag "home-dogours.png", class:"picture-definition" %>
+      <%= image_tag "balade-dogours.png", class:"picture-definition" %>
+      <%= image_tag "perdu-dogours.png", class:"picture-definition" %>
+      <%= image_tag "dash-dogours.png", class:"picture-definition" %>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><a href="mailto:clavel.antoine@gmail.com"><i class="fa-solid fa-2x fa-envelope email-link"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/antoine-clavel-6ba1445a/"><i class="fa-brands fa-2x fa-linkedin email-link"></i></a></p>
+        <p><a href="https://github.com/Aclavel4592"><i class="fa-brands fa-2x fa-github email-link"></i></a></p>
+        <p><a href="https://dogours.me"><%= image_tag "logo.png", class:"logo"%></a></p>
+      </div>
+      <div class="footer-right">
+        <div class="icon-container">
+          <p><i class="fa-solid fa-2x fa-square-phone-flip"></i></p>
+        </div>
+        <div>
+          <p>: 06 16 22 01 30</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
