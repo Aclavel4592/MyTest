@@ -9,14 +9,8 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="header-left">
-        <h1></h1>
-        <p><span class="purple-badge"></span> <strong> Antoine CLAVEL </strong><i>| Paris, France</i></p>
-      </div>
+    <p><%= link_to root_path do %><i class="fa-solid fa-2x fa-igloo home-hover home"></i><% end %>| <i> Antoine CLAVEL </i></p>
       <div class="header-right">
-        <%= link_to root_path do %>
-          <i class="fa-solid fa-2x fa-igloo home-hover"></i>
-        <% end %>
         <%= link_to home_french_path do %>
           <%= image_tag "france.png", class:"flag" %>
         <% end %>
@@ -27,52 +21,58 @@
     </div>
   </header>
   <section class="experience">
-    <div>
-    <h2>Experiencias Principales</h2>
-    <h3>DOGOURS<%= image_tag "logo.png", class:"image" %></h3>
-    <p>Co-fundador - 7 meses | 2024 - actual</p>
-    <ul>
-      <li>Creación y diseño de una PWA Ruby On Rails con notificaciones push, tablero, mensajería instantánea, etc.</li>
-      <li>Creación de un Plan de Negocio / Figma / video de demostración para incubadoras (104 factory, Station F, etc.)</li>
-      <li>Definición de una estrategia de Marketing y comercial & acuerdo de principio con fondos BPI</li>
-    </ul>
-    <h3>MARKETPAY<%= image_tag "marketpay.png", class:"image" %></h3>
-    <p>Propietario de la Solución Mulesoft - 3 años | 2021 - 2023</p>
-    <ul>
-      <li>Supervisión de flujos de pago, técnicos e híbridos para Carrefour</li>
-      <li>Gestión completa de la interfaz Mulesoft / Ejecución - Construcción / equipo de 5 desarrolladores / 1,5M€</li>
-      <li>Gestión de 35 APIs en 2 balanceadores de carga mantenidos por 45 vCores Prod / entorno de pruebas</li>
-      <li>Reconstrucción de una CI / CD - (JDK - Maven - Github)</li>
-      <li>Implementación de una puerta de enlace API - Herramienta tipo ELK</li>
-      <li>Gestión de los Secretos de MarketPay (certificados SSL, MTLS, etc.)</li>
-    </ul>
-    <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
-    <p>Gerente de applicationes Deportes / Póker - 2 años | 2019 - 2020</p>
-    <ul>
-      <li>Gestión de actividades de deportes y póker Build & Run</li>
-      <li>Gestión de equipos – Seguimiento operativo y técnico de la actividad aplicativa</li>
-      <li>Diálogo con socios internacionales & Seguimiento de los roadmaps de clientes / Presupuesto anual (2,5M€)</li>
-      <li>Seguimiento de la migración completa a AWS - PMU general</li>
-      <li>Diseño de documentos técnicos (Elasticsearch, gestión de flujos, implementación de API, llamadas AJAX, etc.)</li>
-    </ul>
-    <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
-    <p>Coach Ágil - 8 meses | 2018</p>
-    <ul>
-      <li>Migración del sitio institucional (D4TH)</li>
-      <li>Gestión de proyectos, facilitación de equipos, gestión onshore / offshore, organización de horarios</li>
-      <li>Diseño de documentos técnicos (Elasticsearch, gestión de flujos, implementación de API, llamadas AJAX, etc.)</li>
-      <li>Supervisión de pruebas End To End / pruebas de carga / pruebas de seguridad</li>
-      <li>Lanzamiento a producción del sitio en big-bang en 5 continentes (27 países)</li>
-    </ul>
-    <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
-    <p>Gerente de Proyecto Técnico (MOE) – 2 años | 2016 - 2018</p>
-    <ul>
-      <li>Implementación de una nueva solución de programación de citas / localizador de tiendas para el N°2 de Francia en cambio de parabrisas</li>
-      <li>Gestión de múltiples proyectos, Gestión de recursos transversales, Garantía técnica de la solución Web, Refactorización de API REST, BDD MySQL</li>
-      <li>Gestión y validación de solicitudes de clientes/negocios según la viabilidad técnica</li>
-      <li>Gestión de recursos técnicos (3 desarrolladores)</li>
-      <li>Implementación de una API Gateway</li>
-    </ul>
+    <div class="job">
+      <h2>Experiencias principales</h2>
+      <h3>DOGOURS<%= image_tag "logo.png", class:"image" %></h3>
+      <p>Co-fundador - 7 meses | 2024 - actual</p>
+      <ul>
+        <li>Creación y diseño de una PWA Ruby on Rails con notificaciones push, tablero, mensajería instantánea, etc.</li>
+        <li>Desarrollo de un Plan de Negocio / Figma / video de demostración para incubadoras (104 factory, Station F, etc.)</li>
+        <li>Definición de una estrategia de Marketing y comercial & acuerdo en principio con los fondos BPI</li>
+      </ul>
+      <h3>MARKETPAY<%= image_tag "marketpay.png", class:"image" %></h3>
+      <p>Propietario del Programa/Producto - 3 años | 2021 - 2023</p>
+      <ul>
+        <li>Supervisión de flujos de pago, técnicos e híbridos, para Carrefour</li>
+        <li>Gestión completa de la interfaz Mulesoft / Run - Build</li>
+        <li>Gestión de un equipo de 5 desarrolladores (Senior & Junior) - presupuesto asignado 1.5M€ (OPEX / CAPEX)</li>
+        <li>Gestión de 35 APIs en 2 balanceadores de carga mantenidos por 45 vCores Prod / entornos de prueba</li>
+        <li>Reconstrucción de una CI / CD (JDK - Maven - Github)</li>
+        <li>Implementación de una pasarela API - herramienta tipo ELK</li>
+        <li>Gestión de los Secretos de MarketPay (certificados SSL, MTLS, etc.)</li>
+        <li>Mantenimiento de la arquitectura Cloudhub & AWS (CPU, almacenamiento, seguridad ACLs, etc.)</li>
+      </ul>
+      <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
+      <p>Responsable de Aplicaciones de Deportes y Póker - 2 años | 2019 - 2020</p>
+      <ul>
+        <li>Gestión de actividades de deportes y póker Build & Run</li>
+        <li>Gestión de un equipo de 10 personas técnico-funcionales (Onshore & Offshore) - presupuesto asignado 2.5M€ (OPEX / CAPEX)</li>
+        <li>Construcción y gestión del backlog funcional y técnico de diversas aplicaciones y clientes pesados</li>
+        <li>Validación y presentación de APK - pivote de la relación con las tiendas Google / Apple</li>
+        <li>Diálogo con socios internacionales y seguimiento de hojas de ruta dependientes en PMU</li>
+        <li>Seguimiento de la migración completa de AWS - perímetro general de PMU</li>
+      </ul>
+      <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
+      <p>Coach Ágil - 8 meses | 2018</p>
+      <ul>
+        <li>Migración del sitio institucional DisneylandParis (D4TH)</li>
+        <li>Presupuesto global asignado para la renovación completa del sitio de 1.5M€</li>
+        <li>Gestión del backlog de producto y técnico dividido en 2 equipos</li>
+        <li>Gestión de proyectos, facilitación de equipos, gestión onshore / offshore, organización de planificaciones</li>
+        <li>Diseño de documentos técnicos (Elasticsearch, gestión de flujo, configuración de API, llamadas AJAX, etc.)</li>
+        <li>Supervisión de pruebas End To End / pruebas de carga / pruebas de seguridad</li>
+        <li>Lanzamiento en producción del sitio en big-bang en 5 continentes (27 países)</li>
+      </ul>
+      <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
+      <p>Gerente de Proyecto Técnico (MOE) – 2 años | 2016 - 2018</p>
+      <ul>
+        <li>Arbitraje de solicitudes de clientes y viabilidad técnica</li>
+        <li>Herramienta de ventas para la prospección comercial</li>
+        <li>Respuesta a licitaciones (APHP, red SNCF, etc.)</li>
+        <li>Supervisión completa de la solución de programación de citas / localizador de tiendas para la segunda empresa de reemplazo de parabrisas en Francia</li>
+        <li>Gestión de 3 desarrolladores, garante técnico del modelo de programación de citas en SaaS</li>
+        <li>Implementación de una API Gateway con clave de API de autenticación, acceso a la documentación <a href="https://developers.clicrdv.com/"><strong>ICI</strong></a></li>
+      </ul>
     </div>
   </section>
   <section class="experience">

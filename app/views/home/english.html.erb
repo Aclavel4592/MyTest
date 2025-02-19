@@ -9,14 +9,8 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="header-left">
-        <h1></h1>
-        <p><span class="purple-badge"></span> <strong> Antoine CLAVEL </strong><i>| Paris, France</i></p>
-      </div>
+      <p><%= link_to root_path do %><i class="fa-solid fa-2x fa-igloo home-hover home"></i><% end %>| <i> Antoine CLAVEL </i></p>
       <div class="header-right">
-        <%= link_to root_path do %>
-          <i class="fa-solid fa-2x fa-igloo home-hover"></i>
-        <% end %>
         <%= link_to home_french_path do %>
           <%= image_tag "france.png", class:"flag" %>
         <% end %>
@@ -32,33 +26,38 @@
       <h3>DOGOURS<%= image_tag "logo.png", class:"image" %></h3>
       <p>Co-founder - 7 months | 2024 - present</p>
       <ul>
-        <li>Creation & design of a Ruby On Rails PWA with push notifications, dashboard, instant messaging, etc.</li>
+        <li>Creation and design of a Ruby on Rails PWA with push notifications, dashboard, instant messaging, etc.</li>
         <li>Development of a Business Plan / Figma / demo video for incubators (104 factory, Station F, etc.)</li>
         <li>Definition of a Marketing and commercial strategy & agreement in principle with BPI funds</li>
       </ul>
       <h3>MARKETPAY<%= image_tag "marketpay.png", class:"image" %></h3>
-      <p>Solution Owner Mulesoft - 3 years | 2021 - 2023</p>
+      <p>Program/Product Owner - 3 years | 2021 - 2023</p>
       <ul>
         <li>Supervision of payment flows, technical and hybrid, for Carrefour</li>
-        <li>Full management of Mulesoft interface / Run - Build / team of 5 developers / €1.5M</li>
-        <li>Management of 35 APIs on 2 load balancers maintained by 45 vCores Prod / test environment</li>
-        <li>Rebuilding of a CI / CD - (JDK - Maven - Github)</li>
+        <li>Full management of the Mulesoft interface / Run - Build</li>
+        <li>Management of a team of 5 developers (Senior & Junior) - allocated budget 1.5M€ (OPEX / CAPEX)</li>
+        <li>Management of 35 APIs on 2 load balancers maintained by 45 vCores Prod / test environments</li>
+        <li>Reconstruction of a CI / CD (JDK - Maven - Github)</li>
         <li>Implementation of an API gateway - ELK type tool</li>
         <li>Management of MarketPay Secrets (SSL certificates, MTLS, etc.)</li>
+        <li>Maintenance of Cloudhub & AWS architecture (CPU, storage, security ACLs, etc.)</li>
       </ul>
       <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
-      <p>Application Manager Sport / Poker - 2 years | 2019 - 2020</p>
+      <p>Sports & Poker Applications Manager - 2 years | 2019 - 2020</p>
       <ul>
         <li>Management of sports and poker activities Build & Run</li>
-        <li>Team management – Operational and technical monitoring of application activity</li>
-        <li>Dialogue with international partners & Monitoring of client roadmaps / Annual budget (€2.5M)</li>
-        <li>Monitoring of full-scope AWS migration - General PMU</li>
-        <li>Design of technical documents (Elasticsearch, flow management, API setup, AJAX calls, etc.)</li>
+        <li>Management of a team of 10 technico-functional people (Onshore & Offshore) - allocated budget 2.5M€ (OPEX / CAPEX)</li>
+        <li>Construction and management of the functional and technical backlog of various applications and heavy clients</li>
+        <li>Validation and submission of APK - pivot of the relationship with Google / Apple stores</li>
+        <li>Dialogue with international partners and monitoring of dependent roadmaps at PMU</li>
+        <li>Monitoring of full-scope AWS migration - overall PMU perimeter</li>
       </ul>
       <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
       <p>Agile Coach - 8 months | 2018</p>
       <ul>
-        <li>Institutional site migration (D4TH)</li>
+        <li>Migration of the DisneylandParis institutional site (D4TH)</li>
+        <li>Global budget allocated for the complete site overhaul of 1.5M€</li>
+        <li>Management of the product and technical backlog split across 2 squads</li>
         <li>Project management, team facilitation, onshore / offshore management, scheduling</li>
         <li>Design of technical documents (Elasticsearch, flow management, API setup, AJAX calls, etc.)</li>
         <li>Supervision of End To End tests / load tests / security tests</li>
@@ -67,11 +66,12 @@
       <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
       <p>Technical Project Manager (MOE) – 2 years | 2016 - 2018</p>
       <ul>
-        <li>Implementation of a new appointment scheduling / store locator solution for France's #2 windshield replacement company</li>
-        <li>Multi-project management, Cross-functional resource management, Web solution technical guarantor, REST API overhaul, MySQL DB</li>
-        <li>Management and validation of client/business requests based on technical feasibility</li>
-        <li>Management of technical resources (3 developers)</li>
-        <li>Implementation of an API Gateway</li>
+        <li>Arbitration of client requests and technical feasibility</li>
+        <li>Sales tooling for commercial prospecting</li>
+        <li>Response to tenders (APHP, SNCF network, etc.)</li>
+        <li>Complete supervision of the appointment scheduling / store-locator solution for France's #2 windshield replacement company</li>
+        <li>Management of 3 developers, technical guarantor of the SaaS appointment scheduling model</li>
+        <li>Implementation of an API Gateway with API key authentication, access to documentation <a href="https://developers.clicrdv.com/"><strong>ICI</strong></a></li>
       </ul>
     </div>
   </section>

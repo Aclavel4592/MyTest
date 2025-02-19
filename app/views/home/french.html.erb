@@ -9,14 +9,8 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="header-left">
-        <h1></h1>
-        <p><span class="purple-badge"></span> <strong> Antoine CLAVEL </strong><i>| Paris, France</i></p>
-      </div>
+    <p><%= link_to root_path do %><i class="fa-solid fa-2x fa-igloo home-hover home"></i><% end %>| <i> Antoine CLAVEL </i></p>
       <div class="header-right">
-        <%= link_to root_path do %>
-          <i class="fa-solid fa-2x fa-igloo home-hover"></i>
-        <% end %>
         <%= link_to home_english_path do %>
           <%= image_tag "england.png", class:"flag" %>
         <% end %>
@@ -40,26 +34,31 @@
       <p>Chef de Programme / Produit Mulesoft - 3 ans | 2021 - 2023</p>
       <ul>
         <li>Supervision des flux de paiement, techniques et hybrides, pour Carrefour</li>
-        <li>Gestion complète de l'interface Mulesoft / Run - Build / équipe de 5 développeurs / 1,5M€</li>
-        <li>Gestion de 35 API sur 2 load balancers maintenus par 45 vCores Prod / environnement de test</li>
-        <li>Reconstruction d'une CI / CD - (JDK - Maven - Github)</li>
+        <li>Gestion complète de l'interface Mulesoft / Run - Build</li>
+        <li>Management équipes de 5 développeurs (Senior & Junior) - budget alloué 1.5M€ (OPEX / CAPEX)</li>
+        <li>Gestion de 35 API sur 2 load balancers maintenus par 45 vCores Prod / environnements de test</li>
+        <li>Reconstruction d'une CI / CD (JDK - Maven - Github)</li>
         <li>Mise en place d'une passerelle API - Outil type ELK</li>
         <li>Gestion des Secrets MarketPay (certificats SSL, MTLS, etc.)</li>
+        <li>Maintenance architecture Cloudhub & AWS (CPU, stockage, sécurité ACL, etc.)</li>
       </ul>
       <h3>PMU<%= image_tag "pmu.png", class:"image" %></h3>
       <p>Responsable d'applications Sport & Poker - 2 ans | 2019 - 2020</p>
       <ul>
         <li>Gestion des activités sport et poker Build & Run</li>
-        <li>Gestion d'équipes – Suivi opérationnel et technique de l’activité applicative</li>
-        <li>Validation et soumission APK et relation avec les stores Google / Apple</li>
-        <li>Dialogue avec les partenaires internationaux & Suivi des Roadmaps clients / Budget annuel (2,5M€)</li>
-        <li>Suivi de la migration AWS full scope - PMU général</li>
+        <li>Management d'équipes technico-fonctionnelles de 10 personnes (Onshore & Offshore) - budget alloué 2.5M€ (OPEX / CAPEX)</li>
+        <li>Construction et gestion de la backlog fonctionnelle et technique des différentes applications et clients lourds</li>
+        <li>Validation et soumission APK - pivot de la relation avec les stores Google / Apple</li>
+        <li>Dialogue avec les partenaires internationaux et Suivi des roadmaps dépendantes au PMU</li>
+        <li>Suivi de la migration AWS full scope - PMU périmètre général</li>
       </ul>
       <h3>Disneyland<%= image_tag "disney.png", class:"image" %></h3>
       <p>Coach Agile - 8 mois | 2018</p>
       <ul>
         <li>Migration du site institutionnel DisneylandParis (D4TH)</li>
-        <li>Gestion de projet, animation des équipes, pilotage onshore / offshore, organisation des plannings</li>
+        <li>Budget global alloué pour la réfonte complète du site d'1.5M€</li>
+        <li>Gestion de la backlog produit et technique répartie sur 2 squads</li>
+        <li>Management de projet, animation des équipes, pilotage onshore / offshore, organisation des plannings</li>
         <li>Conception de documents techniques (Elasticsearch, gestion de flux, mise en place d'API, appels AJAX, etc.)</li>
         <li>Supervision des tests End To End / tests de charge / tests de sécurité</li>
         <li>Lancement en production du site en big-bang sur 5 continents (27 pays)</li>
@@ -67,11 +66,12 @@
       <h3>Solocal<%= image_tag "solocal.png", class:"image" %></h3>
       <p>Chef de projet technique (MOE) – 2 ans | 2016 - 2018</p>
       <ul>
-        <li>Mise en place d’une nouvelle solution de prise de RDV / Store-locator pour le N°2 français du changement de pare-brise en France</li>
-        <li>Gestion multi-projets, gestion des ressources transverses, garant technique de la solution SAAS</li>
-        <li>Gestion et validation des demandes clients/business en fonction de la faisabilité technique</li>
-        <li>Gestion des ressources techniques (3 développeurs)</li>
-        <li>Mise en place d’une API Gateway</li>
+        <li>Arbitrages demandes clients et faisabilité technique</li>
+        <li>Relai avant-vente de l'outil pour démarchage commercial</li>
+        <li>Réponse à appel d'offre (APHP, SNCF réseau, etc.)</li>
+        <li>Supervision complète de la refonte de la solution de prise de RDV / Store-locator pour France Pare-brise N2 Français</li>
+        <li>Management de 3 développeurs, garant technique du modèle de prise de RDV en SaaS</li>
+        <li>Mise en place d’une API Gateway avec clé API d'authentification, accès à la documentation<a href="https://developers.clicrdv.com/"><strong> ICI</strong></a></li>
       </ul>
     </div>
   </section>
