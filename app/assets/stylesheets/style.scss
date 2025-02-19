@@ -21,6 +21,12 @@ body {
   gap: 10px;
   color: white;
 }
+.home {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+  vertical-align: middle
+}
 
 .home-hover:hover {
   color: #e71ba0;
@@ -43,7 +49,7 @@ body {
 
 .header-left {
   display: flex;
-  align-items: center;
+  vertical-align: middle;
 }
 
 .purple-badge {
@@ -167,13 +173,13 @@ h2 {
 
 .picture-set {
   margin: 1em auto;
-  max-width: 1030px;
+  max-width: 1000px;
   gap: 1em;
   align-items: top;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  padding: 3em 1em 4em 1em;
+  padding: 3em 2em 4em 2em;
   margin-bottom: 9em;
   background: #FFFBE9;
   border-radius: 8px;
@@ -185,10 +191,17 @@ h2 {
   margin: 1em 1em 2em 1em;
 }
 
+.picture-definition:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease-in-out;
+}
+
 .project-link {
   text-align: justify;
   text-decoration: none;
 }
+
+
 
 footer {
   text-align: center;

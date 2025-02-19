@@ -9,20 +9,23 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="header-left">
-        <h1></h1>
-        <p><span class="purple-badge"></span> <strong> Antoine CLAVEL </strong><i>| Paris, France</i></p>
-      </div>
-      <div class="header-right">
-        <%= link_to root_path do %>
-          <i class="fa-solid fa-2x fa-igloo home-hover"></i>
+    <p><%= link_to root_path do %><i class="fa-solid fa-2x fa-igloo home-hover home"></i><% end %>| <i> Antoine CLAVEL </i></p>
+      <div><i>Curriculums -</i>
+        <%= link_to home_french_path do %>
+          <%= image_tag "france.png", class:"flag" %>
+        <% end %>
+        <%= link_to home_english_path do %>
+          <%= image_tag "england.png", class:"flag" %>
+        <% end %>
+        <%= link_to home_spanish_path do %>
+          <%= image_tag "spain.png", class:"flag" %>
         <% end %>
       </div>
     </div>
   </header>
   <section class="personal-information">
     <div class="personal-information-left ">
-      <a href="https://dogours.me/users"><%= image_tag "logo.png", class:"avatar" %></a>
+      <a href="https://dogours.me"><%= image_tag "logo.png", class:"avatar" %></a>
     </div>
     <div class="personal-information-right">
       <h1>DOGOURS</h1>
@@ -40,12 +43,12 @@
       des professionnels du monde canin et ont pour vocation de permettre aux propritaires de mieux comprendre les attentes de leur animal de compagnie
       mais aussi de les aider dans leur quotidien sur des thématiques diverses, tout au long du cycle de vie de leur chien, de la phase d'adoption jusqu'à
       la fin de vie de leurs petits protégés.</p>
-      <p>En plus de ces services, DOGOURS répond à une mission d'intérêt public. C’est à dire qu’elle répond à un besoin essentiel de la société, ici ce
-      service correspond au bien-être de l'animal de compagnie. Chacun peut déclarer la perte de son chien directement en activant le bouton “Déclarer la perte”
-      et renseigner les informations relatives au lieu, à l’heure et au jour de sa disparition directement sur son profil.
-      Une fois les informations complétées, le chien apparaîtra alors sur la liste critique des chiens perdus et une notification est envoyée à l’ensemble des
-      utilisateurs de la plateforme leur signalant alors la perte du chien.</p>
-      <p>Pour plus de contexte ci-dessous des screenshots de la solution qui est également disponible ici :<a href="https://dogours.me/users"><%= image_tag "logo.png", class:"flag" %></a></p>
+      <p>Avec la fonctionnalité de déclaration de perte de son chien par le propriétaire, DOGOURS répond également à une mission d'intérêt public. C’est à
+      dire qu’elle apporte des solutions à un besoin essentiel de la société, ici le bien-être l'animal. Chacun peut déclarer la perte
+      de son chien directement en activant le bouton “Déclarer la perte” et renseigner les informations relatives au lieu et à l’heure de sa disparition
+      directement sur son profil. Une fois les informations complétées, le chien apparaîtra alors sur la liste critique des chiens perdus et une notification
+      sera envoyée à l’ensemble des utilisateurs de la plateforme leur signalant alors la disparition de ce chien.</p>
+      <p>Pour plus de contexte ci-dessous des screenshots de la solution qui est également disponible ici :<a href="https://dogours.me/users/sign_up"><%= image_tag "logo.png", class:"flag" %></a></p>
       <%= image_tag "home-dogours.png", class:"picture-definition" %>
       <%= image_tag "balade-dogours.png", class:"picture-definition" %>
       <%= image_tag "perdu-dogours.png", class:"picture-definition" %>
