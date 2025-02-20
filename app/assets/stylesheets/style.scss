@@ -29,7 +29,7 @@ body {
 }
 
 .home-hover:hover {
-  color: #e71ba0;
+  color: #65C18C;
   transform: scale(1.35);
   transition: all 0.3s ease-in-out;
 }
@@ -47,16 +47,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.header-left {
-  display: flex;
-  vertical-align: middle;
-}
-
 .purple-badge {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #e71ba0;
+  background-color: #65C18C;
   border-radius: 50%;
   margin-right: 5px;
   vertical-align: middle;
@@ -100,11 +95,12 @@ body {
   color: black;
   text-decoration: none;
   border: none;
-  opacity: 0.8;;
+  opacity: 0.8;
 }
 
 .badge-curriculum {
-  background-color: #FAAB78;
+  background-color: #FCC2FC;
+  color: rgb(29, 29, 29);
 }
 
 .badge-curriculum:hover {
@@ -113,7 +109,8 @@ body {
 }
 
 .badge-project {
-  background-color: #B4E4FF;
+  background-color: #90D26D;
+  color: rgb(29, 29, 29);
 }
 
 .badge-project:hover {
@@ -201,8 +198,6 @@ h2 {
   text-decoration: none;
 }
 
-
-
 footer {
   text-align: center;
   background: #344D67;
@@ -234,7 +229,7 @@ footer {
 }
 
 .email-link:hover {
-  color: #e71ba0;
+  color: #65C18C;
   transform: scale(1.35);
   transition: all 0.3s ease-in-out;
 }
